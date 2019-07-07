@@ -1,6 +1,6 @@
-import Models.GlobalLookup;
-import Models.KeyMetadata;
-import Models.Record;
+import models.GlobalLookup;
+import models.KeyMetadata;
+import models.Record;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

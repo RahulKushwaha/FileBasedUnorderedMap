@@ -1,4 +1,4 @@
-import Models.Record;
+import models.Record;
 
 public interface RecordReader {
     long getRecord(long offset, Record record);

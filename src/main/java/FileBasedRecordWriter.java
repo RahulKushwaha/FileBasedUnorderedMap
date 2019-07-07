@@ -1,5 +1,5 @@
-import Models.KeyMetadata;
-import Models.Record;
+import models.KeyMetadata;
+import models.Record;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.UnsupportedEncodingException;
@@ -50,8 +50,7 @@ public class FileBasedRecordWriter implements RecordWriter {
       return null;
     }
 
-    return new KeyMetadata(this.fileUuid, recordStartingPosition, keyAsBytes.length,
-        valueAsBytes.length);
+    return new KeyMetadata(this.fileUuid, recordStartingPosition);
   }
 
   @Override

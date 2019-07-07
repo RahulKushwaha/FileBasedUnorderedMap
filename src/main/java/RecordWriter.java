@@ -1,5 +1,5 @@
-import Models.KeyMetadata;
-import Models.Record;
+import models.KeyMetadata;
+import models.Record;
 
 public interface RecordWriter {
     KeyMetadata appendRecord(Record record);

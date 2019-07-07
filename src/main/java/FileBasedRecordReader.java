@@ -1,6 +1,6 @@
-import Models.Record;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import models.Record;
 
 public class FileBasedRecordReader implements RecordReader {
 
@@ -44,7 +44,9 @@ public class FileBasedRecordReader implements RecordReader {
       offset += 16 + keyLength + valueLength;
       this.numberOfRecordsRead++;
     } catch (IOException e) {
+      // Something wrong happened.
       e.printStackTrace();
+      return -1;
     }
 
     return offset;
